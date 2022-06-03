@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1>Battleship</h1>
+        </header>
+        <main>
+            <div id="friendly-waters">
+                <h2>Friendly Waters</h2>
+                <div class="board"></div>
+            </div>
+            <div id="center-column">
+                <div id="instructions" hidden>
+                    <button>Play</button>
+                    <h3>Game Instructions</h3>
+                    <p>Arrange your ships in friendly waters. Once game starts fire at enemy ships by clicking on squares in enemy waters. The enemy will fire back at your ships inbetween your shots. First player to sink all enemy ships wins.</p>
+                </div>
+                <div id="ship-display">
+                    <div class="ship">
+                        <span style="carrier">
+                            <img src="./images/carrier-blue.png">
+                            <h4>Air carrier: 5 hits</h4>
+                        </span>
+                    </div>
+                    <div class="ship">
+                        <span style="battlecruiser">
+                            <img src="./images/battlecruiser-blue.png">
+                            <h4>Battlecruiser: 4 hits</h4>
+                        </span>
+                    </div>
+                    <div class="ship">
+                        <span style="destroyer">
+                            <img src="./images/destroyer-blue.png">
+                            <h4>Destoyer: 3 hits</h4>
+                        </span>
+                    </div>
+                    <div class="ship">
+                        <span style="submarine">
+                            <img src="./images/submarine-blue.png">
+                            <h4>Submarine: 2 hits</h4>
+                        </span>
+                    </div>
+                    <div class="ship">
+                        <span style="patrol-boat">
+                            <img src="./images/patrolboat-blue.png">
+                            <h4>Patrol boat: 1 hit</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="enemy-waters">
+                <h2>Enemy Waters</h2>
+                <div class="board"></div>
+            </div>
+        </main>
+        <footer>
+            <p>Made with love by Bryan Fink @ 2022</p>
+        </footer>
+    </div>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>
